@@ -60,20 +60,135 @@
             <source src="./assets/happy-birthday-266285.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
           </audio>
-        <button class="btn" id="playbtn" onclick="playAudio()">Touch Me</button>
-        <button class="btn" id="pausebtn" onclick="pauseAudio()">Is it irritating</button>
+        
         </div>
-          <div class="banner lg:container lg:mx-auto lg:mt-36 bg-[url(./assets/banner-bg.jpg)] bg-contain lg:bg-cover bg-no-repeat bg-center lg:h-[900px] w-full ">
+          <div class="banner lg:container lg:mx-auto lg:mt-36 bg-[url(./assets/banner-bg.jpg)] bg-contain lg:bg-cover bg-no-repeat bg-center lg:h-[900px] h-[450px] w-full ">
             <div class="text lg:py-7 py-3 px-4 lg:px-36">
                 <h3 class="text-3xl lg:pt-64 lg:text-6xl">Xronia polla<br> agápi mou</h3>
-                <p class="text-base mt-8 lg:text-xl">Borí na min íme to próto su randevú,<br>  filí í i próti su agápi, ómos thélo na íme  <br class="hidden lg:block">  i teleftéa su.<br class="hidden lg:block"> Ópu ke na kitákso mu thimízi tin agápi su. Íse o kózmos mu.</p>
-            </div>
+                <p class="text-base mt-8 mb-8 lg:text-xl">Borí na min íme to próto su randevú,<br>  filí í i próti su agápi, ómos thélo na íme  <br class="hidden lg:block">  i teleftéa su.<br class="hidden lg:block"> Ópu ke na kitákso mu thimízi tin agápi su. Íse o kózmos mu.</p>
+                <button class="btn" id="playbtn" onclick="playAudio()">Touch Me</button>
+                <button class="btn" id="pausebtn" onclick="pauseAudio()">Is it irritating</button>
+              </div>
            
           </div>
 
     </header>
     <main>
-        <section>
+        <section class="container mx-auto mt-80 pb-80 flex ">
+          <div class="card bg-pink-100 w-96 shadow-xl z-10">
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/IMG-20220614-WA0000.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-pink-100 w-96 shadow-xl z-20 -ml-28">
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/IMG-20220614-WA0001.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-pink-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/IMG-20220614-WA0002.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-pink-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/IMG-20221115-WA0000.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-pink-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/IMG-20221115-WA0010.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel w-full hidden">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img
+                src="./assets/images/IMG-20220614-WA0000.jpg"
+                class="" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
             
         </section>
     </main>
