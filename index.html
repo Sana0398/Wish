@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap');
         .adlam-display-font {
             font-family: "ADLaM Display", serif;
             font-weight: 400;
@@ -19,6 +20,14 @@
             font-family: "Sora", serif;
             font-weight: 400;
             font-style: normal;
+}
+.noto-sans-bengali {
+  font-family: "Noto Sans Bengali", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
         #pausebtn{
           display: none;
@@ -74,88 +83,14 @@
 
     </header>
     <main>
-        <section class="container mx-auto mt-80 pb-80 flex ">
-          <div class="card bg-pink-100 w-96 shadow-xl z-10">
-            <figure class="px-10 pt-10">
-              <img
-                src="./assets/images/IMG-20220614-WA0000.jpg"
-                alt="Shoes"
-                class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions">
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-pink-100 w-96 shadow-xl z-20 -ml-28">
-            <figure class="px-10 pt-10">
-              <img
-                src="./assets/images/IMG-20220614-WA0001.jpg"
-                alt="Shoes"
-                class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions">
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-pink-100 w-96 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img
-                src="./assets/images/IMG-20220614-WA0002.jpg"
-                alt="Shoes"
-                class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions">
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-pink-100 w-96 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img
-                src="./assets/images/IMG-20221115-WA0000.jpg"
-                alt="Shoes"
-                class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions">
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-pink-100 w-96 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img
-                src="./assets/images/IMG-20221115-WA0010.jpg"
-                alt="Shoes"
-                class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions">
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel w-full hidden">
+        <section class="container mx-auto mt-32 flex flex-col ">
+          <h3 class="text-2xl font-bold text-center mb-4" >বউ ঘরে না নিলে এভাবেই খেতে হবে!!! </h3>
+          <div class="carousel w-1/2 h-96 mx-auto rounded-lg">
             <div id="slide1" class="carousel-item relative w-full">
               <img
-                src="./assets/images/IMG-20220614-WA0000.jpg"
-                class="" />
+                src="./food/4fcf2327a37307562ba78c215115d271.jpeg"
+                class="w-full" 
+                alt="carousel"/>
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide4" class="btn btn-circle">❮</a>
                 <a href="#slide2" class="btn btn-circle">❯</a>
@@ -163,7 +98,7 @@
             </div>
             <div id="slide2" class="carousel-item relative w-full">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
                 class="w-full" />
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide1" class="btn btn-circle">❮</a>
@@ -172,7 +107,7 @@
             </div>
             <div id="slide3" class="carousel-item relative w-full">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                src="./food/2a41aa363a8ae1e98a4cce95c2d0c589.jpeg"
                 class="w-full" />
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide2" class="btn btn-circle">❮</a>
@@ -181,15 +116,187 @@
             </div>
             <div id="slide4" class="carousel-item relative w-full">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                src="./food/2b21280be7237e3aa9d14ca34b97c2f9.jpeg"
                 class="w-full" />
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide5" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide5" class="carousel-item relative w-full">
+              <img
+                src="./food/b14cd9fc40129fcfb97aa7e621719d07.jpeg"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
+          </div>   
+        </section>
+
+        <section class="container mx-auto mt-32 pb-80 flex relative">
+          <div class=" card-compact bg-base-100 w-96 shadow-xl rounded-2xl hover:z-20">
+            <figure>
+              <img
+              class="rounded-2xl"
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes" />
+            </figure>
           </div>
-            
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/20c6e89e00a2268a01d057e64ee1ca5c.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/2b21280be7237e3aa9d14ca34b97c2f9.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20  ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20  ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20  ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20  ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20  ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 hover:z-20 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+          <div class="card-compact bg-base-100 w-96 shadow-xl -ml-80 ">
+            <figure>
+              <img
+              class=" rounded-2xl"
+                src="./food/212f1fddb39e90ba5b726da677018b85.jpeg"
+                alt="Shoes" />
+            </figure>
+          </div>
+
         </section>
     </main>
     <footer>
